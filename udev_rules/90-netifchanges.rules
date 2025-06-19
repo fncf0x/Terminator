@@ -1,0 +1,2 @@
+SUBSYSTEM=="net", RUN+="/opt/terminator/scripts/launcher.sh &"
+

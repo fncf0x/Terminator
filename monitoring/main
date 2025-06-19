@@ -1,0 +1,8 @@
+tmux new-session -d -s Monitor >/dev/null
+tmux split-window -h
+tmux send-keys 'watch -n0.1 ifconfig' C-m
+tmux select-pane -L
+tmux send-keys 'watch -n0.1 proxystat' C-m
+tmux split-window -v
+tmux send-keys 'watch -n 0.1 cat /tmp/*std*' C-m
+tmux attach-session -t Monitor

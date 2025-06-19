@@ -1,0 +1,11 @@
+[Unit]
+Description=Inint Web API 
+
+[Service]
+Type=simple
+RemainAfterExit=yes
+ExecStart=/opt/terminator/web_api/api.sh
+TimeoutStartSec=0
+
+[Install]
+WantedBy=default.target

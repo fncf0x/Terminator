@@ -1,0 +1,11 @@
+[Unit]
+Description=Inint usb hub 
+
+[Service]
+Type=simple
+RemainAfterExit=yes
+ExecStart=/opt/terminator/scripts/services/checker.sh
+TimeoutStartSec=0
+
+[Install]
+WantedBy=default.target

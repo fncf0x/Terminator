@@ -1,0 +1,4 @@
+#!/bin/bash
+
+mysql -u terminator -p  terminator -e "drop table proxies;" --password='n5cHK9pBt1oAdcY!!'
+rm /var/log/terminator.log 

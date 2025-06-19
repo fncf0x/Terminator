@@ -1,0 +1,4 @@
+#@reboot /opt/terminator/scripts/cron/cleaner >/dev/null
+#@reboot /opt/terminator/scripts/cron/internet_checker >/dev/null
+#@reboot /opt/terminator/scripts/cron/interface_checker >/dev/null
+5 8 * * 0 /opt/terminator/scripts/clear_logs.sh

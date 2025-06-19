@@ -1,0 +1,6 @@
+tmux new-session -d -s Logs >/dev/null
+tmux send-keys 'touch /var/log/terminator.log && tail -f /var/log/terminator.log' C-m
+tmux split-window -h
+tmux resize-pane -R 22
+tmux send-keys 'while true; do clear ; /opt/terminator/monitoring/db_view_all ; sleep 1; done 2> /dev/null' C-m
+tmux attach-session -t Logs
